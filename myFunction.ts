@@ -38,4 +38,12 @@ const hero =['SuperMan','SpiderMan']
     return `This is ${hero}`
  })
 
+ function consoleError(errmsg:string):void {
+    console.log(errmsg)
+ }
+
+ //Handle Errors
+ function consoleErrors(errmsg:string):never {
+    throw new Error(errmsg)
+ }
 export{}
